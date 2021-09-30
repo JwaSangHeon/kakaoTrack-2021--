@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding : 0;
+    box-sizing : border-box;
+}
+html,body{
+    /*height : 100%*/
+    font-size: 28px;
+}
+.wrapper{
+    border: 2px solid red;
+    /*height 100%*/
+    weight: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+}
+
+.wrapper2{
+    /*font-size: 12px;*/
+    font-size : 2em;
+}
