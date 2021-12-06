@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Produce</title>
+<style>
+    body {
+        display: grid;
+        grid-template-areas:
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+        grid-template-rows: 60px 1fr 60px;
+        grid-template-columns: 20% 1fr 15%;
+        grid-gap: 10px;
+        height: 100vh;
+        margin: 0;
+    }
+    header, footer, article, nav, div {
+        padding: 20px;
+        background: skyblue;
+    }
+    #pageHeader {
+        grid-area: header;
+    }
+    #pageFooter {
+        grid-area: footer;
+    }
+    #mainArticle {
+        grid-area: article;
+    }
+    #mainNav {
+        grid-area: nav;
+    }
+    #siteAds {
+        grid-area: ads;
+    }
+    .box {
+        width: 150px;
+        height: 150px;
+        border-radius: 70%;
+        overflow: hidden;
+    }
+    .profile {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
+<body>
+<header id="pageHeader">
+    <h1>PRODUCE</h1>
+</header>
+<article id="mainArticle"><p>
+    <table border="1">
+        <caption><strong>수업시간표</strong></caption>
+        <tr>
+            <th>구분</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>1교시</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="9">공강</td>
+        </tr>
+        <tr>
+            <td>2교시</td>
+            <td></td>
+            <td rowspan="2">프로그래밍언어론</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3교시</td>
+            <td rowspan="2">소프트웨어분석및설계</td>
+            <td></td>
+            <td>프로그래밍언어론</td>
+        </tr>
+        <tr>
+            <td>4교시</td>
+            <td colspan="3">점심시간</td>
+        </tr>
+        <tr>
+            <td>5교시</td>
+            <td colspan="2">점심시간</td>
+            <td>소프트웨어분석및설계</td>
+            <td>인공지능</td>
+        </tr>
+        <tr>
+            <td>6교시</td>
+            <td></td>
+            <td rowspan="2">SW융합캡스톤디자인2</td>
+            <td rowspan="2">인공지능</td>
+            <td>정보보안</td>
+        </tr>
+        <tr>
+            <td>7교시</td>
+            <td></td>
+            <td rowspan="3">기초웹개발론</td>
+        </tr>
+        <tr>
+            <td>8교시</td>
+            <td rowspan="2">파이썬과인공지능기초</td>
+            <td rowspan="2">창업크리에이티브씽킹</td>
+            <td rowspan="2">정보보안</td>
+        </tr>
+        <tr>
+            <td>9교시</td>
+        </tr>
+    </table>
+    </p></article>
+<nav id="mainNav">
+    <h2>과제물</h2>
+    <p>
+    <ul>
+        <li><a href="license.html">license</a></li>
+        <li><a href="work1.html">work1</a></li>
+        <li><a href="work2.html">work2</a></li>
+    </ul>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <p>
+    <h2>git 주소</h2>
+    <a href="https://github.com/JwaSangHeon">git</a>
+    </p>
+</nav>
+<div id="siteAds">광고</div>
+<footer id="pageFooter">2021-10-21</footer>
+</body>
