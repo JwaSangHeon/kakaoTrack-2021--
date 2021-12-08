@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex; /*container에 적용 flex*/
+    height: 500px;
+    flex-direction: row;/*배치 방향 설정*/
+    flex-wrap: wrap; /*한 줄에 꽉 찼을때 어떻게 아이템을 넘길지, wrap은 넘어가고 nowrap은 안넘어가고 짤린다*/
+    /*flex-flow: row wrap;위에 두 줄이랑 같다*/
+    justify-content: space-around;/*메인축 방항*/
+    align-items: center;/*수직축 방향*/
+    align-content: center; /*justify는 메인축, align은 수직축(오뎅꼬치 연상)*/
+    /*여러행 정렬 (wrap으로 설정되어 줄이 바뀌었을때)*/
+}
+.item{
+    flex-basis: 300px; /*아이템의 최소 크기 지정 row일때는 너비 column일때는 높이*/
+    flex-grow: 1; /*너비를 꽉채워준다*/
+    flex-shrink: 1;
+    /*flex: 1 1 300px;!*위에 3줄이랑 같은 말*!*/
+    border: 2px solid gray;
+    text-align: center;
+}
+/*.item:nth-child(1){*/
+/*    order:2;*/
+/*    background-color: #00c73c;*/
+/*}*/
+/*.item:nth-child(2){*/
+/*    order:1;*/
+/*    background-color: #87CEFA;*/
+/*}*/

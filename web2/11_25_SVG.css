@@ -1,0 +1,25 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 927px;
+    height: 221px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper path{
+    stroke-dasharray: 4983px;
+    stroke-dashoffset: 4983px;
+}
+svg path.
