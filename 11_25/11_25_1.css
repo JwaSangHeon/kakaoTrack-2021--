@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jeju{
+    border: 5px solid brown;
+    padding:15px;
+    border-radius: 10px;
+}
+.jeju:hover{
+    box-shadow: 5px 5px 0 blue;
+}

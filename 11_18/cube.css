@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    perspective: 1000px;
+}
+.wrapper{
+    width: 300px;
+    height: 600px;
+    background-color: #092444;
+    transform-style: preserve-3d;
+    transition: 3s;
+}
+.wrapper:hover{
+    transform: rotateX(360deg) rotateY(1turn);
+}
+.wrapper div{
+    width: 100%;
+    height: 300px;
+    background-color: mediumpurple;
+}
+.wrapper div:first-child{
+    transform: rotateX(450deg) translateZ(150px) translateY(150px) ;
+}
+.wrapper div:last-child{
+    background-color: lightseagreen;
+}

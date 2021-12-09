@@ -1,0 +1,26 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border:1px solid blue;
+    background-color: black;
+    transition: 2s ease-in;
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: #092444;
+    border: 5px solid red;
+}
